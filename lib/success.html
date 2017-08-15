@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>操作成功</title>
+</head>
+<style type="text/css">
+	body {
+    margin:200px auto;
+    max-width:700px;
+    background-color:#f1f1f1;
+    font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,"Microsoft YaHei",Arial,sans-serif;
+    ; color:#666;
+}
+.main {
+    margin: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.13);
+    border-radius: 5px;
+    padding:10px;
+    text-align:center;
+}
+a {
+    color: #21759B;
+    text-decoration: none;
+}
+a:hover {
+    color: #D54E21;
+}
+p {
+    margin:10px;
+}
+.form-control.password_2 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: relative;
+}
+.form-control.password_1 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: -1px;
+    position: relative;
+}
+</style>
+<body>
+<div class="main" style = "border-top: 5px solid #00CED1;">
+	<p style = 'font-size:30px;'>操作成功!(°∀°)ﾉ</p>
+	<p align = "left">
+		{$text}        
+             </p>
+            <a href='{$url}'>立即跳转</a>
+            </p>
+</div>
+<script>
+function jumpurl(){
+  location='{$url}';
+}
+setTimeout('jumpurl()',3000);
+</script> 
+</body>
+</html>
